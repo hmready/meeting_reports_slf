@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de3f37c4-bb5f-45b7-8087-9781ed66fe44" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Apex Interface" />
+        <option value="Class" />
+        <option value="Apex Class" />
+        <option value="Apex Metadata" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IlluminatedCloudWorkspaceSettings">
+    <option name="moduleWorkspaceSettings">
+      <map>
+        <entry key="Development Challenge">
+          <value>
+            <ModuleWorkspaceSettings>
+              <option name="moduleContentsLastModified" value="1655826475506" />
+            </ModuleWorkspaceSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="savedDocuments">
+              <list>
+                <AnonymousApexSavedDocument>
+                  <option name="apexLogLevel" value="FINEST" />
+                  <option name="name" value="Anonymous Apex 1" />
+                </AnonymousApexSavedDocument>
+              </list>
+            </option>
+          </AnonymousApexSettings>
+        </option>
+        <option name="connectionWorkspaceSettings">
+          <map>
+            <entry key="Development Challenge">
+              <value>
+                <ConnectionWorkspaceSettings>
+                  <option name="buildSuccessDatesBySourceRootRelativePath">
+                    <map>
+                      <entry key="APEXCLASS:APEXBASESHARE" value="1655901893177" />
+                      <entry key="APEXCLASS:APEXMANUALSHARERECORDSBUILDER" value="1655733885000" />
+                      <entry key="APEXCLASS:APEXSHARECALCULATOR" value="1655895564673" />
+                      <entry key="APEXCLASS:APEXSHARERECALCULATOR" value="1655733177000" />
+                      <entry key="APEXCLASS:APEXSHARERECORDSGENERATOR" value="1655738703000" />
+                      <entry key="APEXCLASS:CHILDSHARECALCULATORMANAGER" value="1655913117933" />
+                      <entry key="APEXCLASS:DATABASERESULTUTIL" value="1655908102747" />
+                      <entry key="APEXCLASS:DESTRUCTIVECHANGES.XML" value="1655731671000" />
+                      <entry key="APEXCLASS:JOBRESULTEMAILSENDER" value="1655906290000" />
+                      <entry key="APEXCLASS:MASTERSHARECALCULATORDATARETRIEVER" value="1655897328614" />
+                      <entry key="APEXCLASS:MASTERSHARECALCULATORDATARETRIEVERIMPL" value="1655911677817" />
+                      <entry key="APEXCLASS:MASTERSHARECALCULATORRETRIEVERFACADE" value="1655907954000" />
+                      <entry key="APEXCLASS:MASTERSHARERECALCULATIONUTIL" value="1655899496898" />
+                      <entry key="APEXCLASS:MASTERSHARERETRIEVER" value="1655449753000" />
+                      <entry key="APEXCLASS:MEETINGREPORTAPEXSHARERECALCULATIONJOB" value="1655913453079" />
+                      <entry key="APEXCLASS:MEETINGREPORTAPEXSHARERECALCULATOR" value="1655798393000" />
+                      <entry key="APEXCLASS:MEETINGREPORTAPEXSHARERECALCULATORJOB" value="1655817426000" />
+                      <entry key="APEXCLASS:MEETINGREPORTAPEXSHARINGCALCULATOR" value="1655738653000" />
+                      <entry key="APEXCLASS:MEETINGREPORTCHILDSHAREMANAGER" value="1655901653024" />
+                      <entry key="APEXCLASS:MEETINGREPORTCONSTANTS" value="1655825982069" />
+                      <entry key="APEXCLASS:MEETINGREPORTMANAUALSHARINGCALCULATOR" value="1655823063000" />
+                      <entry key="APEXCLASS:MEETINGREPORTSTATUSMANAGEMENTJOB" value="1655911875275" />
+                      <entry key="APEXCLASS:MEETINGREPORTSTATUSMANAGEMENTJOBTEST" value="1655911492378" />
+                      <entry key="APEXCLASS:OPPORTUNITYSHARECALCULATORRETRIEVER" value="1655896057646" />
+                      <entry key="APEXCLASS:OPPORTUNITYSHARERETRIEVER" value="1655449769000" />
+                      <entry key="APEXCLASS:ORDERSHARECALCULATORRETRIEVER" value="1655895923167" />
+                      <entry key="APEXCLASS:QUOTESHARECALCULATORRETRIEVER" value="1655895964142" />
+                      <entry key="APEXCLASS:SHARERECORDSBUILDER" value="1655303744000" />
+                      <entry key="CUSTOMMETADATA:MASTER_SHARE_RECALCULATION.OPPORTUNITY" value="1655825982069" />
+                      <entry key="CUSTOMMETADATA:MASTER_SHARE_RECALCULATION.ORDER" value="1655825982069" />
+                      <entry key="CUSTOMMETADATA:MASTER_SHARE_RECALCULATION.QUOTE" value="1655825982069" />
+                    </map>
+                  </option>
+                  <option name="lastBuildScope" value="CUSTOM" />
+                  <option name="lastBuildViewToggles">
+                    <map>
+                      <entry key="RETRIEVE">
+                        <value>
+                          <BuildViewToggles>
+                            <option name="showLocalAndServer" value="true" />
+                            <option name="showLocalOnly" value="false" />
+                            <option name="showServerOnly" value="true" />
+                            <option name="showSubscribedByParent" value="true" />
+                            <option name="showSubscribedOnly" value="true" />
+                          </BuildViewToggles>
+                        </value>
+                      </entry>
+                    </map>
+                  </option>
+                  <option name="lastCustomSelectionUrls">
+                    <set>
+                      <option value="metadata://CustomObject/Master_Share_Recalculation__mdt" />
+                    </set>
+                  </option>
+                </ConnectionWorkspaceSettings>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="retrieveAndMergeDefault" value="false" />
+        <option name="soqlQuerySettings">
+          <SoqlQuerySettings>
+            <option name="savedDocuments">
+              <list>
+                <SoqlQuerySavedDocument>
+                  <option name="body" value="" />
+                  <option name="name" value="SOQL Query 1" />
+                </SoqlQuerySavedDocument>
+              </list>
+            </option>
+          </SoqlQuerySettings>
+        </option>
+      </ProjectWorkspaceSettings>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ac9Av2HSUThw6O2eAwuoTMKiUB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/alena.marozava/IdeaProjects/Development Challenge",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alena.marozava\IdeaProjects\Development Challenge\src\classes" />
+      <recent name="C:\Users\alena.marozava\IdeaProjects\Development Challenge\src\classes\meetingreport" />
+      <recent name="C:\Users\alena.marozava\IdeaProjects\Development Challenge\src\classes\share" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Apex Unit Tests.MeetingReportStatusManagementJobTest">
+    <configuration name="MeetingReportStatusManagementJobTest" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="Development Challenge" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="false" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="Development Challenge">
+            <value>
+              <set>
+                <option value="MeetingReportStatusManagementJobTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="INFO" />
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map />
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="waveLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MeetingReportStatusManagementJobTest.shouldUpdateStatusesWithNoErrors" type="com.illuminatedcloud.intellij" factoryName="Apex Unit Tests" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allTests" value="false" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="apexLogLevel" value="DEBUG" />
+      <option name="calloutsLogLevel" value="INFO" />
+      <option name="connectionName" value="Development Challenge" />
+      <option name="connectionType" value="MDAPI" />
+      <option name="contextConfiguration" value="true" />
+      <option name="databaseLogLevel" value="INFO" />
+      <option name="logLevelsInitialized" value="false" />
+      <option name="moduleToTestClassNames">
+        <map>
+          <entry key="Development Challenge">
+            <value>
+              <set>
+                <option value="MeetingReportStatusManagementJobTest" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="nbaLogLevel" value="INFO" />
+      <option name="profilingLogLevel" value="INFO" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="systemLogLevel" value="DEBUG" />
+      <option name="testClassToTestMethodNames">
+        <map>
+          <entry key="MeetingReportStatusManagementJobTest">
+            <value>
+              <set>
+                <option value="shouldUpdateStatusesWithNoErrors" />
+              </set>
+            </value>
+          </entry>
+        </map>
+      </option>
+      <option name="testSuiteName" />
+      <option name="validationLogLevel" value="INFO" />
+      <option name="visualforceLogLevel" value="INFO" />
+      <option name="waveLogLevel" value="INFO" />
+      <option name="workflowLogLevel" value="INFO" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Apex Unit Tests.MeetingReportStatusManagementJobTest" />
+        <item itemvalue="Apex Unit Tests.MeetingReportStatusManagementJobTest.shouldUpdateStatusesWithNoErrors" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de3f37c4-bb5f-45b7-8087-9781ed66fe44" name="Changes" comment="" />
+      <created>1655297869596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655297869596</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Development_Challenge$MeetingReportStatusManagementJobTest.ic2" NAME="Development Challenge Coverage Results" MODIFIED="1655911499874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="Apex" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" PROJECT_NAME="Development Challenge" CONNECTION_NAME="Development Challenge" CONNECTION_TYPE="MDAPI" />
+  </component>
+</project>
