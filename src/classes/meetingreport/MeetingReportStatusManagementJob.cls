@@ -1,3 +1,6 @@
+/**
+ *  Batch job to manage status and priority of Meeting Reports.
+ */
 public class MeetingReportStatusManagementJob
         implements Database.Batchable<sObject>, Database.Stateful, System.Schedulable {
 

@@ -2,8 +2,15 @@
  * Created by alena.marozava on 20.06.2022.
  */
 
+/** Implements logic of providing sharing records of Master object for Children. */
 public with sharing class ApexShareCalculator {
 
+    /**
+     * For Children objects represented with @param childShareManager recalculates sharing records
+     * based on sharing records of Master objects represented with @param retrievers.
+     * Recalculation is done based on those Master sharing records which where updated after @param lastRecalculated
+     * Based on each Master sharing rule generated rule for each child with corresponding access level.
+     */
     public static void recalculate(
         Datetime lastRecalculated,
         List<MasterShareCalculatorDataRetriever> retrievers,
