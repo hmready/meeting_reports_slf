@@ -31,13 +31,6 @@ public class ApexBaseShare {
     }
 
     private static String getAccessLevel(String level) {
-        switch on level {
-            when 'Read' {
-                return READ_ACCESS;
-            }
-            when else {
-                return EDIT_ACCESS;
-            }
-        }
+        return level.equals(READ_ACCESS) ? READ_ACCESS : EDIT_ACCESS;
     }
 }

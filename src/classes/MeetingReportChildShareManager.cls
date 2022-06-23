@@ -4,6 +4,8 @@
 
 public with sharing class MeetingReportChildShareManager implements ChildShareCalculatorManager {
 
+    public static final String APEX_ROW_CAUSE = 'Master__c';
+
     public void createNewShares(List<ApexBaseShare> shares) {
         List<Meeting_Report__Share> meetingReportShares = new List<Meeting_Report__Share>();
         for (ApexBaseShare source : shares) {
@@ -34,7 +36,7 @@ public with sharing class MeetingReportChildShareManager implements ChildShareCa
     }
 
     public String getRowCause() {
-        return 'Master__c'; // TODO: Should be available from Schema
+        return APEX_ROW_CAUSE; // TODO: Should be available from Schema
     }
 
     private Meeting_Report__Share convert(ApexBaseShare source) {

@@ -32,7 +32,7 @@ public with sharing class MasterShareRecalculationUtil {
     }
 
     public static String getAccessLevel(SObject share, Master_Share_Recalculation__mdt metadata) {
-        return (String) share.get(getParentFieldName(metadata));
+        return (String) share.get(getAccessLevelFieldName(metadata));
     }
 
     public static String getAccessLevelFieldName(Master_Share_Recalculation__mdt metadata) {

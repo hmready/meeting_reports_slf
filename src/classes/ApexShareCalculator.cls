@@ -27,9 +27,11 @@ public with sharing class ApexShareCalculator {
             ChildShareCalculatorManager childShareManager
     ) {
         Map<Id, List<ApexBaseShare>> masterShares = retriever.retrieve(lastRecalculated);
-        Map<Id, Id> parentIdToMasterId = childShareManager.retrieveAndMapParentIds(masterShares.keySet());
-        childShareManager.deleteOldShares(parentIdToMasterId.keySet());
-        childShareManager.createNewShares(generate(masterShares, parentIdToMasterId, childShareManager.getRowCause()));
+        if (!masterShares.isEmpty()) {
+            Map<Id, Id> parentIdToMasterId = childShareManager.retrieveAndMapParentIds(masterShares.keySet());
+            childShareManager.deleteOldShares(parentIdToMasterId.keySet());
+            childShareManager.createNewShares(generate(masterShares, parentIdToMasterId, childShareManager.getRowCause()));
+        }
     }
 
     private static List<ApexBaseShare> generate(

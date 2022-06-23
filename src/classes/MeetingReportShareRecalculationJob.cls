@@ -2,7 +2,7 @@
  * Created by alena.marozava on 21.06.2022.
  */
 
-public with sharing class MeetingReportApexShareRecalculationJob implements Schedulable {
+public with sharing class MeetingReportShareRecalculationJob implements Schedulable {
 
     private static final Integer RUN_PERIOD_MINUTES = 30;
     private static final List<String> masterTypes = new List<String>{

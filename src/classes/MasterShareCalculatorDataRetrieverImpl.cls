@@ -5,7 +5,7 @@
 public with sharing class MasterShareCalculatorDataRetrieverImpl implements MasterShareCalculatorDataRetriever {
 
     private static final String RETRIEVE_PARENT_IDS_BEFORE_DATE_QUERY =
-            'SELECT {0} FROM {1} WHERE LastModifiedDate >= lastModifiedDate ALL ROWS';
+            'SELECT {0} FROM {1} WHERE LastModifiedDate >= :lastModifiedDate ALL ROWS';
     private static final String RETRIEVE_ALL_OBJECTS_PARENT_ID_IN_QUERY =
             'SELECT ID, {0}, UserOrGroupId, {1}, RowCause, IsDeleted FROM {2} WHERE {0} IN :parentIds';
 
