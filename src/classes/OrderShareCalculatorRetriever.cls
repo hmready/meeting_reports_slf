@@ -3,11 +3,6 @@
  */
 
 public with sharing class OrderShareCalculatorRetriever implements MasterShareCalculatorDataRetriever {
-
-    public String getMasterType() {
-        return Order.class.getName();
-    }
-
     public Map<ID, List<ApexBaseShare>> retrieve(Datetime lastModifiedDate) {
         List<ID> modifiedIds = new List<Id>();
         for (OrderShare orderShare : [

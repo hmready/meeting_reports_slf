@@ -15,12 +15,8 @@ public with sharing class MasterShareCalculatorDataRetrieverImpl implements Mast
         this.masterType = masterType;
     }
 
-    public String getMasterType() {
-        return masterType;
-    }
-
     public Map<Id, List<ApexBaseShare>> retrieve(Datetime lastModifiedDate) {
-        Master_Share_Recalculation__mdt metadata = MasterShareRecalculationUtil.getMetadataByType(getMasterType());
+        Master_Share_Recalculation__mdt metadata = MasterShareRecalculationUtil.getMetadataByType(masterType);
         List<Id> modifiedParentIds = retrieveParentIdsOfModifiedRecords(lastModifiedDate, metadata);
         return retrieveSharesAndGroupByParentId(modifiedParentIds, metadata);
     }

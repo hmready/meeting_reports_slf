@@ -26,13 +26,9 @@ public with sharing class MeetingReportApexShareRecalculationJob implements Sche
     }
 
     private void executeSolutionWithMetadata() {
-        List<MasterShareCalculatorDataRetriever> retrievers = new List<MasterShareCalculatorDataRetriever>();
-        for (String type : masterTypes) {
-            retrievers.add(new MasterShareCalculatorDataRetrieverImpl(type));
-        }
         ApexShareCalculator.recalculate(
                 Datetime.now().addMinutes(-RUN_PERIOD_MINUTES),
-                retrievers,
+                MasterShareRetrieversContainer.getRetrieversWithMetadata(masterTypes),
                 new MeetingReportChildShareManager()
         );
     }

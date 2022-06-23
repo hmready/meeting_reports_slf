@@ -4,10 +4,6 @@
 
 public class OpportunityShareCalculatorRetriever implements MasterShareCalculatorDataRetriever {
 
-    public String getMasterType() {
-        return Opportunity.class.getName();
-    }
-
     public Map<ID, List<ApexBaseShare>> retrieve(Datetime lastModifiedDate) {
         List<ID> modifiedIds = new List<Id>();
         for (OpportunityShare oppShare : [

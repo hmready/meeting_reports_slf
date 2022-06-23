@@ -3,11 +3,6 @@
  */
 
 public with sharing class QuoteShareCalculatorRetriever implements MasterShareCalculatorDataRetriever {
-
-    public String getMasterType() {
-        return Quote.class.getName();
-    }
-
     public Map<ID, List<ApexBaseShare>> retrieve(Datetime lastModifiedDate) {
         List<ID> modifiedIds = new List<Id>();
         for (QuoteShare quoteShare : [
