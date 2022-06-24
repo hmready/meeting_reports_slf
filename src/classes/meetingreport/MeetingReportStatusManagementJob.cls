@@ -1,8 +1,13 @@
 /**
  *  Batch job to manage status and priority of Meeting Reports.
  */
-public class MeetingReportStatusManagementJob
+public without sharing class MeetingReportStatusManagementJob
         implements Database.Batchable<sObject>, Database.Stateful, System.Schedulable {
+
+    private static final String DATA_QUERY =
+            'SELECT ID, Status__c, Due_Date__c, Critical__c ' +
+            'FROM Meeting_Report__c ' +
+            'WHERE Due_Date__c = NEXT_N_DAYS:2 OR Due_Date__c = TODAY';
 
     private static String SEND_TO_EMAIL = 'tech.work.sales05+support@gmail.com';
     private static String SUBJECT_MSG = 'Meeting report status update result';
@@ -16,13 +21,8 @@ public class MeetingReportStatusManagementJob
         Database.executeBatch(new MeetingReportStatusManagementJob());
     }
 
-    public List<Meeting_Report__c> start(Database.BatchableContext context) {
-        List<Meeting_Report__c> query = [
-                SELECT ID, Status__c, Due_Date__c, Critical__c
-                FROM Meeting_Report__c
-                WHERE Due_Date__c = NEXT_N_DAYS:2 OR Due_Date__c = TODAY
-        ];
-        return query;
+    public Database.QueryLocator start(Database.BatchableContext context) {
+        return Database.getQueryLocator(DATA_QUERY);
     }
 
     public void execute(Database.BatchableContext context, List<Meeting_Report__c> scope) {

@@ -26,31 +26,18 @@ private class MeetingReportStatusManagementJobTest {
                 Subject__c = 'Some',
                 Critical__c = true
         );
-        insert reportToday;
 
-        Meeting_Report__c reportInTwoDays = new Meeting_Report__c(
-                Account__c = account.Id,
-                Opportunity__c = opportunity.Id,
-                Due_Date__c = Date.today().addDays(2),
-                Name = IN_TWO_DAYS_NAME,
-                Meeting_Date__c = Date.today().addDays(-2),
-                Status__c = MeetingReportConstants.STATUS_DRAFT,
-                Subject__c = 'Some',
-                Critical__c = false
-        );
-        insert reportInTwoDays;
+        Meeting_Report__c reportInTwoDays = reportToday.clone(true, true);
+        reportInTwoDays.Id = null;
+        reportInTwoDays.Name = IN_TWO_DAYS_NAME;
+        reportInTwoDays.Due_Date__c = Date.today().addDays(2);
+        reportInTwoDays.Critical__c = false;
 
-        Meeting_Report__c reportInThreeDays = new Meeting_Report__c(
-                Account__c = account.Id,
-                Opportunity__c = opportunity.Id,
-                Due_Date__c = Date.today().addDays(3),
-                Name = IN_THREE_DAYS_NAME,
-                Meeting_Date__c = Date.today().addDays(-2),
-                Status__c = MeetingReportConstants.STATUS_DRAFT,
-                Subject__c = 'Some',
-                Critical__c = false
-        );
-        insert reportInThreeDays;
+        Meeting_Report__c reportInThreeDays = reportInTwoDays.clone(true, true);
+        reportInThreeDays.Name = IN_THREE_DAYS_NAME;
+        reportInThreeDays.Due_Date__c = Date.today().addDays(3);
+
+        insert new List<Meeting_Report__c> { reportToday, reportInTwoDays, reportInThreeDays};
     }
 
     @IsTest

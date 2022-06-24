@@ -40,10 +40,12 @@ public with sharing class MeetingReportShareRecalculationJobTest {
         List<Meeting_Report__Share> apexShares = [
                 SELECT Id, AccessLevel, RowCause, ParentId, UserOrGroupId
                 FROM Meeting_Report__Share
-                WHERE RowCause = :MeetingReportChildShareManager.APEX_ROW_CAUSE
+                WHERE RowCause = :Schema.Meeting_Report__Share.RowCause.Master__c
         ];
 
-        System.assertEquals(8, [SELECT Id FROM Meeting_Report__Share].size(), 'Total number of records must be equal to expected');
+        Integer totalSharesNumber = [SELECT Id FROM Meeting_Report__Share].size();
+
+        System.assertEquals(8, totalSharesNumber, 'Total number of records must be equal to expected');
         System.assertEquals(4, apexShares.size(), 'Should be created 4 new APEX shares and old APEX records deleted');
         assertAccessLevels(apexShares, userId);
     }
